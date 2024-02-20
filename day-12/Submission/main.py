@@ -11,7 +11,7 @@ my_info = {
 
 @app.route('/', methods=['GET'])
 def get_info():
-    pass
+    return jsonify(my_info)
 
-if __name__ == '__main__':
+if __name__ == '__main__':  
     app.run(debug=True)
